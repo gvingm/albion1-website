@@ -44,12 +44,14 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: |
+          pnpm install --no-frozen-lockfile 2>&1 || pnpm install --force
 
       - name: Build
         run: pnpm build
         env:
           NODE_ENV: production
+          SKIP_MANUS_RUNTIME: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
