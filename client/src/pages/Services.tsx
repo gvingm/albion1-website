@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Zap, BarChart3, Mic } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Services() {
   const services = [
@@ -107,9 +108,11 @@ export default function Services() {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Свяжитесь с нами для консультации и обсуждения вашего проекта
           </p>
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Получить консультацию
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <a>Получить консультацию</a>
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
