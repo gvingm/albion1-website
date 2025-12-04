@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Analytics from "./components/Analytics";
 
 function Router() {
   return (
@@ -41,6 +42,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
+          <Analytics />
           <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-1">
