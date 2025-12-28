@@ -1,0 +1,33 @@
+# GitHub Pages configuration
+title: "Альбион-1: Интегратор Битрикс24"
+description: "Профессиональный веб-сайт компании Альбион-1, специализирующейся на интеграции Bitrix24, оптимизации бизнес-процессов, цифровом маркетинге и голосовых роботах на основе LLM."
+url: "https://gvingm.github.io"
+baseurl: "/albion1-website"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# SEO
+author: "Альбион-1"
+lang: "ru"
+
+# Exclude from processing
+exclude:
+  - node_modules/
+  - client/
+  - server/
+  - shared/
+  - *.config.js
+  - package.json
+  - pnpm-lock.yaml
+  - tsconfig.json
+  - vite.config.ts
+  - .github/
+  - public/404.html
